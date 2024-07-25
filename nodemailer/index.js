@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
     secure: true,
     auth: {
         user: "shivam8878213950@gmail.com",   ///  ye keval login ka kaam kar raha 
-        pass: 'edxy qvda bkgr nujg'    // email ka pass except nhi karta  alag se create karna padta hi ..
+        pass: 'edxy qvda bkgr nujg'    // email ka pass except nhi karta  alag se create karna padta hai app password ki help se ..
     }  
 })
 
@@ -24,6 +24,7 @@ let transporter = nodemailer.createTransport({
  }
 
  ///////////////================    send email    /////////////////////
+//==========  ye jo send mail method hai vo createTransport ki method hai ==========//
 transporter.sendMail(maileOptios, (err, ack)=>{
     if(err) {
         console.log("mail sending failed")
