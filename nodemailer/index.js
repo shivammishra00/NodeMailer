@@ -1,16 +1,20 @@
-//===========  require node mailer
+//===========  require node mailer  ================//
+            //---------------------//
 let nodemailer = require('nodemailer')
 
-// console.log(nodemailer)
+console.log(nodemailer)    //// node mailer ki method check kiya .....
 
-// configure email credentials  ///
+//============== configure email credentials  =====================///
+              //-----------------------------//
+
+// == nodemailer ki method hai createTransport jo ki ek object accept karti hai == //
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     host: "smtp.gmail.com",   /// simple male tranfer protocall 
     port: 465 , 
     secure: true,
     auth: {
-        user: "shivam8878213950@gmail.com",   ///  ye keval login ka kaam kar raha 
+        user: "shivam8878213950@gmail.com",   ///  ye email keval login ka kaam kar raha 
         pass: 'edxy qvda bkgr nujg'    // email ka pass except nhi karta  alag se create karna padta hai app password ki help se ..
     }  
 })
